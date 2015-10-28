@@ -3,7 +3,7 @@ import {Module, ModuleInitOptions} from "microframework/Module";
 /**
  * T-Validator module integration with microframework.
  */
-export class TValidatorModule implements Module {
+export class ValidatorTsModule implements Module {
 
     // -------------------------------------------------------------------------
     // Properties
@@ -16,7 +16,7 @@ export class TValidatorModule implements Module {
     // -------------------------------------------------------------------------
 
     getName(): string {
-        return 'TValidatorModule';
+        return 'ValidatorTsModule';
     }
 
     init(options: ModuleInitOptions): void {

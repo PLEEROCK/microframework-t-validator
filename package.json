@@ -1,7 +1,7 @@
 {
-  "name": "microframework-t-validator",
-  "version": "0.0.1",
-  "description": "T-validator integration with microframework",
+  "name": "microframework-validator.ts",
+  "version": "0.0.2",
+  "description": "Validator.ts integration with microframework",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "author": {
@@ -10,24 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PLEEROCK/microframework-t-validator.git"
+    "url": "https://github.com/PLEEROCK/microframework-validator.ts.git"
   },
   "bugs": {
-    "url": "https://github.com/PLEEROCK/microframework-t-validator/issues"
+    "url": "https://github.com/PLEEROCK/microframework-validator.ts/issues"
   },
   "tags": [
     "microframework",
-    "t-validator"
+    "validator.ts"
   ],
-  "typings": "./microframework-t-validator.d.ts",
+  "typings": "./microframework-validator.ts.d.ts",
   "typescript": {
     "definitions": [
-      "microframework-t-validator.d.ts"
+      "microframework-validator.ts.d.ts"
     ]
   },
   "dependencies": {
     "microframework": ">=0.1.0",
-    "t-validator": ">=0.0.1"
+    "validator.ts": ">=0.0.2"
   },
   "devDependencies": {
     "del": "^2.0.2",

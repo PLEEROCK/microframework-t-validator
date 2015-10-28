@@ -1,24 +1,24 @@
-# T-Validator module for Microframework
+# Validator.ts module for Microframework
 
-Adds integration between [t-validator](http://github.com/PLEEROCK/t-validator) and 
+Adds integration between [validator.ts](http://github.com/PLEEROCK/validator.ts) and 
 [microframework](https://github.com/PLEEROCK/microframework).
 
 ## Usage
 
 1. Install module:
 
-    `npm install --save microframework-t-validator`
+    `npm install --save microframework-validator.ts`
 
 2. Simply register module in the microframework when you are bootstrapping it.
     
     ```typescript
     
         import {MicroFrameworkBootstrapper} from "microframework/MicroFrameworkBootstrapper";
-        import {TValidatorModule} from "microframework-t-validator/TValidatorModule";
+        import {ValidatorTsModule} from "microframework-validator.ts/ValidatorTsModule";
         
         new MicroFrameworkBootstrapper({ baseDirectory: __dirname })
             .registerModules([
-                new TValidatorModule()
+                new ValidatorTsModule()
             ])
             .bootstrap()
             .then(result => console.log('Module is running. Validation is available now.'))
@@ -26,7 +26,7 @@ Adds integration between [t-validator](http://github.com/PLEEROCK/t-validator) a
             
     ```
 
-3. Now you can use [t-validator](http://github.com/PLEEROCK/t-validator) module in your microframework.
+3. Now you can use [validator.ts](http://github.com/PLEEROCK/validator.ts) module in your microframework.
 
 ## Todos
 
