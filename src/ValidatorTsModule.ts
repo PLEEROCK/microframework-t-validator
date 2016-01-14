@@ -1,7 +1,8 @@
 import {Module, ModuleInitOptions} from "microframework/Module";
+import {Validator} from "validator.ts/Validator";
 
 /**
- * T-Validator module integration with microframework.
+ * Validator.ts module integration with microframework.
  */
 export class ValidatorTsModule implements Module {
 
@@ -12,7 +13,7 @@ export class ValidatorTsModule implements Module {
     private options: ModuleInitOptions;
 
     // -------------------------------------------------------------------------
-    // Accessors
+    // Implemented Methods
     // -------------------------------------------------------------------------
 
     getName(): string {
@@ -24,11 +25,21 @@ export class ValidatorTsModule implements Module {
     }
 
     onBootstrap(dependentModules?: Module[]): Promise<any> {
+        this.setupContainers();
         return Promise.resolve();
     }
 
     onShutdown(): Promise<any> {
         return Promise.resolve();
+    }
+
+    // -------------------------------------------------------------------------
+    // Private Methods
+    // -------------------------------------------------------------------------
+
+    private setupContainers() {
+        const validator: Validator = this.options.container.get(Validator);
+        validator.container = this.options.container;
     }
 
 }
