@@ -1,6 +1,6 @@
 {
   "name": "microframework-validator.ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Validator.ts integration with microframework",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
@@ -21,7 +21,7 @@
   ],
   "typescript": {
     "definitions": [
-      "index.ts.d.ts"
+      "index.d.ts"
     ]
   },
   "dependencies": {
