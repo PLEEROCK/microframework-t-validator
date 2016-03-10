@@ -17,7 +17,7 @@ export class ValidatorTsModule implements Module {
     // -------------------------------------------------------------------------
 
     getName(): string {
-        return 'ValidatorTsModule';
+        return "ValidatorTsModule";
     }
 
     init(options: ModuleInitOptions): void {

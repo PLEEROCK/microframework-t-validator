@@ -1,7 +1,7 @@
 # Validator.ts module for Microframework
 
-Adds integration between [validator.ts](http://github.com/PLEEROCK/validator.ts) and 
-[microframework](https://github.com/PLEEROCK/microframework).
+Adds integration between [validator.ts](http://github.com/pleerock/validator.ts) and
+[microframework](https://github.com/pleerock/microframework).
 
 ## Usage
 
@@ -23,10 +23,15 @@ Adds integration between [validator.ts](http://github.com/PLEEROCK/validator.ts)
             .bootstrap()
             .then(result => console.log('Module is running. Validation is available now.'))
             .catch(error => console.error('Error: ', error));
-            
     ```
 
-3. Now you can use [validator.ts](http://github.com/PLEEROCK/validator.ts) module in your microframework.
+3. ES6 features are used, so you may want to install [es6-shim](https://github.com/paulmillr/es6-shim) too:
+
+    `npm install es6-shim --save`
+
+    you may need to `require("es6-shim");` in your app.
+
+4. Now you can use [validator.ts](http://github.com/pleerock/validator.ts) module in your microframework.
 
 ## Todos
 
