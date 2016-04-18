@@ -1,7 +1,7 @@
 {
   "name": "microframework-class-validator",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "class-validator integration with microframework",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
