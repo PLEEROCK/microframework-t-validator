@@ -14,11 +14,11 @@ Adds integration between [class-validator](http://github.com/pleerock/class-vali
     ```typescript
     
         import {MicroFrameworkBootstrapper} from "microframework/MicroFrameworkBootstrapper";
-        import {ValidatorTsModule} from "microframework-class-validator/ValidatorTsModule";
+        import {ClassValidatorModule} from "microframework-class-validator/ClassValidatorModule";
         
         new MicroFrameworkBootstrapper({ baseDirectory: __dirname })
             .registerModules([
-                new ValidatorTsModule()
+                new ClassValidatorModule()
             ])
             .bootstrap()
             .then(result => console.log('Module is running. Validation is available now.'))
