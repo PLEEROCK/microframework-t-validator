@@ -1,8 +1,8 @@
 {
-  "name": "microframework-validator.ts",
+  "name": "microframework-class-validator",
   "private": true,
   "version": "0.2.0",
-  "description": "Validator.ts integration with microframework",
+  "description": "class-validator integration with microframework",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "author": {
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pleerock/microframework-validator.ts.git"
+    "url": "https://github.com/pleerock/microframework-class-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/pleerock/microframework-validator.ts/issues"
+    "url": "https://github.com/pleerock/microframework-class-validator/issues"
   },
   "tags": [
     "microframework",
-    "validator.ts"
+    "class-validator"
   ],
   "dependencies": {
-    "microframework": "~0.4.0",
-    "validator.ts": "~0.2.0"
+    "microframework": "~0.5.1",
+    "class-validator": "~0.3.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",

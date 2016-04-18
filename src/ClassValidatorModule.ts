@@ -1,10 +1,10 @@
 import {Module, ModuleInitOptions} from "microframework/Module";
-import {Validator} from "validator.ts/Validator";
+import {Validator} from "class-validator/Validator";
 
 /**
- * Validator.ts module integration with microframework.
+ * class-validator module integration with microframework.
  */
-export class ValidatorTsModule implements Module {
+export class ClassValidatorModule implements Module {
 
     // -------------------------------------------------------------------------
     // Properties
@@ -17,7 +17,7 @@ export class ValidatorTsModule implements Module {
     // -------------------------------------------------------------------------
 
     getName(): string {
-        return "ValidatorTsModule";
+        return "ClassValidatorModule";
     }
 
     init(options: ModuleInitOptions): void {

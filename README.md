@@ -1,20 +1,20 @@
-# Validator.ts module for Microframework
+# class-validator module for Microframework
 
-Adds integration between [validator.ts](http://github.com/pleerock/validator.ts) and
+Adds integration between [class-validator](http://github.com/pleerock/class-validator) and
 [microframework](https://github.com/pleerock/microframework).
 
 ## Usage
 
 1. Install module:
 
-    `npm install --save microframework-validator.ts`
+    `npm install --save microframework-class-validator`
 
 2. Simply register module in the microframework when you are bootstrapping it.
     
     ```typescript
     
         import {MicroFrameworkBootstrapper} from "microframework/MicroFrameworkBootstrapper";
-        import {ValidatorTsModule} from "microframework-validator.ts/ValidatorTsModule";
+        import {ValidatorTsModule} from "microframework-class-validator/ValidatorTsModule";
         
         new MicroFrameworkBootstrapper({ baseDirectory: __dirname })
             .registerModules([
@@ -31,7 +31,7 @@ Adds integration between [validator.ts](http://github.com/pleerock/validator.ts)
 
     you may need to `require("es6-shim");` in your app.
 
-4. Now you can use [validator.ts](http://github.com/pleerock/validator.ts) module in your microframework.
+4. Now you can use [class-validator](http://github.com/pleerock/class-validator) module in your microframework.
 
 ## Todos
 
